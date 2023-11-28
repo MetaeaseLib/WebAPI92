@@ -31,7 +31,19 @@ public class WebApi920101Controller {
   // https://cloud.spring.io/spring-cloud-gcp/multi/multi__stackdriver_logging.html
   private static final Logger logger = LoggerFactory.getLogger(WebApi920101Controller.class);
 
-  /** Example endpoint handler. */
+  /** endpoint handler. */
+  @GetMapping("/")
+  public @ResponseBody String index() {
+    // Example of structured logging - add custom fields
+    MDC.put("logField", "custom-entry");
+    MDC.put("arbitraryField", "custom-entry");
+    // Use logger with log correlation
+    // https://cloud.google.com/run/docs/logging#correlate-logs
+    logger.info("Structured logging example.");
+    return "ルートディレクトリ起動";
+  }
+
+  /** endpoint handler. */
   @GetMapping("/test")
   public @ResponseBody String test() {
     // Example of structured logging - add custom fields
