@@ -90,4 +90,4 @@ substitutions:
   _GCR_HOSTNAME: us-central1-docker.pkg.dev
   _SERVICE_NAME: webapi92
   _DEPLOY_REGION: us-central1
-  _REPOSITORY: metaease-webapi
+  _REPOSITORY: WebAPI92
