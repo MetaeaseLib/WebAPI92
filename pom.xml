@@ -24,13 +24,6 @@ limitations under the License.
     <maven.compiler.source>1.8</maven.compiler.source>
   </properties>
 
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.1.0</version>
-    <relativePath /> <!-- lookup parent from repository -->
-  </parent>
-
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -124,6 +117,11 @@ limitations under the License.
     </dependency>
 
     <!-- firebase -->
+    <dependency>
+      <groupId>org.wso2.orbit.com.google.api-client</groupId>
+      <artifactId>google-api-client</artifactId>
+      <version>1.33.1.wso2v2</version>
+    </dependency>
     <dependency>
       <groupId>com.google.firebase</groupId>
       <artifactId>firebase-admin</artifactId>
