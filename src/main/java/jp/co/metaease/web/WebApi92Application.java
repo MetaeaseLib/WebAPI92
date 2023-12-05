@@ -45,7 +45,7 @@ public class WebApi92Application {
     if (projectId == null) {
       projectId = getProjectId();
     }
-    logger.info(WebApi92Application.class.getSimpleName() + ": ■ProjectID[" + projectId + "]");
+    logger.info(WebApi92Application.class.getSimpleName() + ": ### ProjectID[" + projectId + "]");
 
     // Initialize Firebase Admin SDK
     GoogleCredentials credentials = GoogleCredentials.getApplicationDefault();
