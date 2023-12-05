@@ -18,6 +18,7 @@ limitations under the License.
   <version>0.0.1-SNAPSHOT</version>
   <name>webapi92</name>
   <description>WebAPI92</description>
+  <packaging>jar</packaging>
 
   <properties>
     <maven.compiler.target>1.8</maven.compiler.target>
