@@ -74,16 +74,6 @@ limitations under the License.
       <groupId>com.google.cloud</groupId>
       <artifactId>spring-cloud-gcp-starter-logging</artifactId>
     </dependency>
-    <dependency>
-      <groupId>net.logstash.logback</groupId>
-      <artifactId>logstash-logback-encoder</artifactId>
-      <version>7.4</version>
-    </dependency>
-    <dependency>
-      <groupId>ch.qos.logback.contrib</groupId>
-      <artifactId>logback-jackson</artifactId>
-      <version>0.1.5</version>
-    </dependency>
 
     <!-- firebase -->
     <dependency>
